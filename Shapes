@@ -1,0 +1,35 @@
+//Bilal Ahmed 
+//Printing Shape
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    int height;
+    int width;
+    
+    // ask user for height and weight
+    cout << "Enter height :";
+    cin >> height;
+    cout << "Enter weight :";
+    cin >> width;
+    
+    // types of symbol for user to choose
+    char symbol; 
+    cout <<"Which symbol would you like to use?" << endl;
+    cout <<"symbols :(@ # $ * + ): ";
+    cin >> symbol;
+    
+    // outer loop
+    for(int h=0;h<height;h++){
+        for(int w=0;w<width;w++){
+            cout << symbol;
+        }
+        cout << endl;
+    }
+    
+ 
+    return 0;
+}
