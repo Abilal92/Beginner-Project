@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+
+
+int main()
+{
+ 
+ 
+ int size;
+ cout << "array size: ";
+ cin >> size;
+ 
+ int *myArray=new int[size];
+ 
+ for(int i=0;i<size;i++){ // user input size of array
+     cout <<"Array["<<i <<"]";
+     cin >> myArray[i];
+ }
+ 
+ for(int i=0;i<size;i++){  // displaying array value 
+    // cout <<myArray[i] << " " ;
+    cout << *(myArray+i)<<" ";
+  
+ }
+ 
+ //int myArray[size];  -> wrong method !
+ 
+    
+ 
+    return 0;
+}
